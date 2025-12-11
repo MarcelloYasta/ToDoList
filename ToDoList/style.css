@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah ke flex-start agar tidak terlalu ke bawah */
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Styling Form */
+#todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input, #todo-priority {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1; /* Input dan Select akan mengisi ruang */
+}
+
+#todo-input {
+    flex-basis: 100%; /* Ambil lebar penuh di baris pertama */
+}
+
+#todo-priority {
+    flex-basis: calc(60% - 5px); /* Bagi ruang dengan tombol */
+}
+
+#todo-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-basis: calc(40% - 5px);
+}
+
+#todo-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling List */
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border-left: 5px solid; /* Untuk prioritas warna */
+    transition: background-color 0.3s;
+}
+
+.todo-text {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+/* Prioritas Warna */
+.low { border-left-color: #28a745; } /* Hijau */
+.medium { border-left-color: #ffc107; } /* Kuning */
+.high { border-left-color: #dc3545; } /* Merah */
+
+/* Status Selesai */
+.completed .todo-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Tombol Hapus */
+.delete-btn {
+    background: #e9ecef;
+    color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}

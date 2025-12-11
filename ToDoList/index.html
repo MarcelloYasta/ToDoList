@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Canggih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 To-Do List Canggih</h1>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Masukkan tugas baru..." required>
+            <select id="todo-priority">
+                <option value="low">Prioritas: Rendah (Hijau)</option>
+                <option value="medium">Prioritas: Sedang (Kuning)</option>
+                <option value="high">Prioritas: Tinggi (Merah)</option>
+            </select>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+
+        <ul id="todo-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

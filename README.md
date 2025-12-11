@@ -4,4 +4,4 @@ Fitur: Penyimpanan Lokal, Prioritas Warna, UI Responsif.
 
 Teknologi: HTML5, CSS3, Vanilla JavaScript.
 
-Cara Menggunakan: Cukup buka index.html
+![Demo Aplikasi To-Do List](assets/Demo.png "Aplikasi To-Do List Berjalan")
